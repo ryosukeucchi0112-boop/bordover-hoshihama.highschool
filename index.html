@@ -1,43 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>星浜学園高等部</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="container header-inner">
+          <div>
+            <p class="eyebrow">SEIHAMA GAKUEN</p>
+            <h1 class="site-title">星浜学園高等部</h1>
+          </div>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="theme-color" content="#000000">
-	<!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
-	<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-	<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-	<!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+          <nav class="nav">
+            <a href="#news">お知らせ</a>
+            <a href="#about">学校案内</a>
+            <a href="#admission">入試情報</a>
+            <a href="#contact">お問い合わせ</a>
+          </nav>
+        </div>
+      </header>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-	<title>React App</title>
-</head>
+      <main>
+        <section class="hero hero-background">
+          <img
+            src="horse.png"
+            alt="星浜学園高等部のメインビジュアル"
+            class="hero-bg-image"
+          />
+          <div class="hero-bg-dark"></div>
+          <div class="hero-bg-grad"></div>
 
-<body>
-	<noscript>
-		You need to enable JavaScript to run this app.
-	</noscript>
-	<div id="root"></div>
-	<!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+          <div class="hero-content">
+            <div class="hero-copy hero-copy-full">
+              <p class="hero-label hero-label-on-image">ACADEMIC INSTITUTION</p>
+              <h2 class="hero-heading hero-heading-on-image">
+                Eclipse first
+                <br />
+                the rest nowhere.
+              </h2>
+              <p class="hero-since hero-since-on-image">since 1898</p>
+              <p class="hero-text hero-text-on-image">
+                星浜学園高等部は、互いに切磋琢磨し合いながら、知性と自律を育む学びを大切にしています。
+                日々の学習と学校生活を通して、生徒一人ひとりの確かな成長を支えます。
+              </p>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+              <div class="hero-actions">
+                <a href="#news" class="button primary light-button">
+                  お知らせを見る
+                </a>
+                <a href="#about" class="button secondary secondary-on-image">
+                  学校案内
+                </a>
+              </div>
+            </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-</body>
+            <div class="hero-school-name hero-school-name-on-image">
+              星浜学園高等部
+            </div>
+          </div>
+        </section>
 
+        <section id="news" class="section">
+          <div class="section-head">
+            <div>
+              <p class="section-label">NEWS</p>
+              <h3 class="section-title">学校からのお知らせ</h3>
+            </div>
+            <a href="#news" class="section-link">一覧を見る</a>
+          </div>
+
+          <div class="news-list">
+            <a href="#news" class="news-item">
+              <div class="news-date">2026.04.12</div>
+              <div>
+                <span class="news-category">重要</span>
+              </div>
+              <div class="news-title">朝倉さんの転落事故について</div>
+              <div class="news-arrow">↗</div>
+            </a>
+
+            <a href="#news" class="news-item">
+              <div class="news-date">2026.04.10</div>
+              <div>
+                <span class="news-category">お知らせ</span>
+              </div>
+              <div class="news-title">熱中症への対応について</div>
+              <div class="news-arrow">↗</div>
+            </a>
+
+            <a href="#news" class="news-item">
+              <div class="news-date">2026.04.05</div>
+              <div>
+                <span class="news-category">学校案内</span>
+              </div>
+              <div class="news-title">昨年度の教育実績</div>
+              <div class="news-arrow">↗</div>
+            </a>
+
+            <a href="#news" class="news-item">
+              <div class="news-date">2026.04.01</div>
+              <div>
+                <span class="news-category">お知らせ</span>
+              </div>
+              <div class="news-title">三浦新聞への対応について</div>
+              <div class="news-arrow">↗</div>
+            </a>
+          </div>
+        </section>
+
+        <section id="about" class="cards">
+          <div class="card">
+            <p class="card-label">PHILOSOPHY</p>
+            <h4 class="card-title">教育方針</h4>
+            <p class="card-text">
+              礼節と探究心を重んじ、学力だけでなく、社会の中で自律して生きる力を育てます。
+            </p>
+          </div>
+
+          <div class="card">
+            <p class="card-label">ENVIRONMENT</p>
+            <h4 class="card-title">学習環境</h4>
+            <p class="card-text">
+              静かな校舎環境ときめ細かな指導体制のもと、生徒が安心して学べる場を整えています。
+            </p>
+          </div>
+
+          <div id="admission" class="card">
+            <p class="card-label">ADMISSION</p>
+            <h4 class="card-title">入試・学校案内</h4>
+            <p class="card-text">
+              学校説明会や入学希望者向け資料、年間行事の概要など、受験生・保護者向け情報を掲載しています。
+            </p>
+          </div>
+        </section>
+
+        <section class="notice">
+          <p>
+            このサイトはフィクション作品用に制作された演出ページです。
+            内容に登場する人物名・団体名・出来事・問い合わせ先等はすべて架空のものです。
+          </p>
+        </section>
+      </main>
+
+      <footer id="contact" class="site-footer">
+        <div class="container footer-inner">
+          <p>© Seihama Gakuen Senior High School</p>
+          <p>〒430-0000 静岡県浜松市中央区星浜町 1-2-3</p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
