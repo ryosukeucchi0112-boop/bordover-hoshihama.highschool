@@ -520,3 +520,127 @@ a {
     font-size: 10px;
   }
 }
+
+/* =========================
+   全ページ共通 固定フィクションヘッダー
+========================= */
+
+.fiction-fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
+  background: rgba(82, 82, 82, 0.94);
+  color: rgba(255, 255, 255, 0.82);
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans JP", "Hiragino Sans",
+    "Yu Gothic", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* 固定帯のぶんだけ全体を下げる */
+body {
+  padding-top: 28px;
+}
+
+/* 学校ヘッダーは固定しない */
+.site-header {
+  position: relative;
+  z-index: 10;
+}
+
+/* ヘッダー内のフォントを統一 */
+.site-header,
+.site-header * {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+}
+
+/* navだけ色味を安定させる */
+.nav a {
+  color: rgba(0, 0, 0, 0.68);
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: rgba(0, 0, 0, 0.95);
+}
+
+/* mainの余白を有効化 */
+.main {
+  padding: 36px 0 96px;
+}
+
+/* お知らせのメタ情報を整列 */
+.news-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* 劇中記事バッジをやや控えめに */
+.fiction-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(80, 80, 80, 0.18);
+  background: rgba(255, 255, 255, 0.65);
+  color: rgba(0, 0, 0, 0.48);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+/* フッターの架空・AI画像表記 */
+.footer-inner {
+  align-items: flex-start;
+}
+
+.footer-fiction-note {
+  max-width: 520px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.48);
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: right;
+}
+
+/* 不要になった個別バナー類は非表示 */
+.fiction-banner,
+.notice,
+.ai-image-note {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .fiction-fixed-header {
+    height: auto;
+    min-height: 30px;
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+
+  body {
+    padding-top: 30px;
+  }
+
+  .footer-fiction-note {
+    text-align: left;
+  }
+
+  .news-meta {
+    gap: 6px;
+  }
+}
